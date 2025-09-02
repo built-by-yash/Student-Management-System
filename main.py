@@ -2,9 +2,9 @@ students = {}
 def add_student():
     sid = int(input("Enter Student ID: "))
     name = input("Enter Student Name: ")
-    subjects = input("Enter subjects (comma separated): ").split(",")
-    marks = list(map(int, input("Enter marks (comma separated): ").split(",")))
-    clubs = set(input("Enter clubs (comma separated): ").split(","))
+    subjects = input("Enter subjects : ").split(",")
+    marks = list(map(int, input("Enter marks : ").split(",")))
+    clubs = set(input("Enter clubs : ").split(","))
     
     students[sid] = {
         "info": (sid, name),
@@ -71,6 +71,9 @@ def menu():
             break
         else:
             print("Invalid choice, try again.\n")
+
+menu()
+
 
 
 
