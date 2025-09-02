@@ -72,5 +72,5 @@ def menu():
         else:
             print("Invalid choice, try again.\n")
 
-menu()    
+
 
