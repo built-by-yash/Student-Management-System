@@ -1,26 +1,4 @@
-#Dictionaries are used to store data values in key:value pairs.
-#A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
-
-students = {                                                                      #created a dictionary
-    101: {
-        "info": ("101", "Alice"),
-        "subjects": ["Math", "Science"],
-        "marks": [85, 90],
-        "clubs": {"Music", "Sports"}
-    },
-    
-    102: {
-        "info": ("102", "Bob"),
-        "subjects": ["History", "English"],
-        "marks": [75, 80],
-        "clubs": {"Drama"}
-    }
-}
-
 students = {}
- 
- # defining function to add students and their info.
-
 def add_student():
     sid = int(input("Enter Student ID: "))
     name = input("Enter Student Name: ")
@@ -36,8 +14,6 @@ def add_student():
     }
     print("✅ Student added successfully!\n")
 
- # defining function to view_students.
-
 def view_students():
     if not students:
         print("No students found.\n")
@@ -51,8 +27,6 @@ def view_students():
     else:
         print("Student not found.\n")   
 
-# function to search students by ID.
-
 def search_student():
     sid = int(input("Enter Student ID to search: "))
     if sid in students:
@@ -65,8 +39,6 @@ def search_student():
     else:
         print(" Student not found.\n")
 
-# function to delete student.
-
 def delete_student():
     sid = int(input("Enter Student ID to delete: "))
     if sid in students:
@@ -74,8 +46,6 @@ def delete_student():
         print("Student deleted successfully!\n")
     else:
         print("Student not found.\n")
-
-# Main menu Function.
 
 def menu():
     while True:
@@ -103,3 +73,4 @@ def menu():
             print("Invalid choice, try again.\n")
 
 menu()    
+
